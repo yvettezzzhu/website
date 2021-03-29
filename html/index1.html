@@ -1,0 +1,1210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <title>耽美首页</title>
+    <link rel="stylesheet" href="../css/reset.min.css">
+    <!-- 字体样式 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_2340609_ku4y0zc4nvs.css">
+
+    <link rel="stylesheet" href="../css/index1.css">
+    <link rel="icon" href="../image/favicon.ico">
+    
+
+
+</head>
+<body>
+    <div id="app" v-cloak>
+        <!-- 顶部导航条 主题区-->
+        <div class="top">
+            <!-- 顶部导航条：左topic 中间搜索 右用户-->
+            <div class="nav">
+                <div class="blank1"></div>
+                <div class="nav-left">
+                    <a class="title-jpg" href="" alt="主站"></a>
+                    <ul>
+                        <li><a class="nav-topic" href="">小说</a></li>
+                        <li><a class="nav-topic" href="">漫画</a></li>
+                        <li><a class="nav-topic" href="">视频</a></li>
+                        <li><a class="nav-topic" href="">广播剧</a></li>
+                        <li><a class="nav-topic" href="">音乐</a></li>
+                    </ul>
+                </div>
+                <div id="search" class="nav-center">
+                    <input v-model="inputValue" @keyup.enter="search" class="keywords" type="text" placeholder="邪门的爱情出现了">
+                </div>
+                <div><a class="search-box iconfont icon-sousuo" href=""></a></div>
+                <div class="nav-right">
+                    <ul>
+                        <li><a href="">登录</a></li>
+                        <li><a href="">注册</a></li>
+                    </ul>
+                </div>
+                <a class="top-ad" href="" alt="主图"></a>
+            </div>
+            <!-- 2.主题区 两行-->
+            <div class="topic md">
+                <!-- 左边 -->
+                <div class="left-topic">
+                    <ul>
+                        <li><a href="">
+                            <div class="left-topic-icon iconfont icon-shouye"></div>
+                            <span class="icon-words">首页</span>
+                        </a></li>
+                        <li><a href="">
+                            <div class="left-topic-icon iconfont icon-dongtai"></div>
+                            <span class="icon-words">动态</span>
+                        </a></li>
+                        <li><a href="">
+                            <div class="left-topic-icon iconfont icon-remen"></div>
+                            <span class="icon-words">热门</span>
+                        </a></li>
+                        <li><a href="">
+                            <div class="left-topic-icon iconfont icon-pindao"></div>
+                            <span class="icon-words">频道</span>
+                        </a></li>
+                    </ul>
+                </div>
+                <span class="split"></span>
+                <div class="center-topic">
+                    <span>
+                        <a href="">
+                            <span>温暖一冬</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box">
+                            试试
+                        </div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>欢乐怼怼</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position1">dsds</div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>沙雕爆笑</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position2">dsds</div>
+                    </span>
+                    
+                    <span>
+                        <a href="">
+                            <span>考验智商</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position3">dsds</div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>深度思考</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position4">dsds</div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>虐心虐肺</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position5">dsds</div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>手撕渣渣</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position6">
+                            原来如此
+                        </div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>毁天灭地</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position7">dsds</div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>锻炼胆量</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position8">sdsd</div>
+                    </span>
+
+                    <span>
+                        <a href="">
+                            <span>虚拟世界</span>
+                            <em>999+</em>
+                        </a>
+                        <div class="content-box box-position9">dsdsd</div>
+                    </span>
+                    
+                </div>
+                <span class="split spilt-position"></span>
+                <div class="right-topic">
+                    <a href="">
+                        <div class="iconfont icon-dudaozhuanlan"></div>
+                        <span>专栏</span>
+                    </a>
+                    <a href="">
+                        <div class="iconfont icon-xinwensudi"></div>
+                        <span>速递</span>
+                    </a>
+                    <a href="">
+                        <div class="iconfont icon-huodong"></div>
+                        <span>活动</span>
+                    </a>
+                    <a href="">
+                        <div class="iconfont icon-zhibo"></div>
+                        <span>直播</span>
+                    </a>
+                    <a href="">
+                        <div class="iconfont icon-zhihuiketang"></div>
+                        <span>课堂</span>
+                    </a>
+                    <a href="">
+                        <div class="iconfont icon-zidianguanli"></div>
+                        <span>攻略</span>
+                    </a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- 主体页面 -->
+        <div class="first-page md">
+            <div class="banner">
+                <div id="slider" class="left-banner">
+                    <div class="slider">
+                        <a :href="linkArr[index]" target="_blank"><img :src="imgArr[index]" alt="主题图"></a>
+                        <!-- <a :style="{ display:isactive1 }" href=""><img :src="SCR[0]" alt="主题图"></a>
+                        <a :style="{ display:isactive2 }" href=""><img :src="SCR[1]" alt="主题图"></a>
+                        <a :style="{ display:isactive3 }" href=""><img :src="SCR[2]" alt="主题图"></a>
+                        <a :style="{ display:isactive4 }" href=""><img :src="SCR[3]" alt="主题图"></a>
+                        <a :style="{ display:isactive5 }" href=""><img :src="SCR[4]" alt="主题图"></a> -->
+                    </div>
+                    <div class="arrow">
+                        <!-- <span @click='leftclick()' class="iconfont icon-shangxiazuoyouTriangle14"></span>
+                        <span @click='rightclick()' class="iconfont icon-shangxiazuoyouTriangle12"></span> -->
+                        <span @click='pervie' class="iconfont icon-shangxiazuoyouTriangle14"></span>
+                        <span @click='next' class="iconfont icon-shangxiazuoyouTriangle12"></span>
+                    </div>
+
+                    <!-- <div class="banner_page">
+                        <span v-bind:class="index == i ? 'current_page':''" v-for="(item,i) in imgArr"
+                            v-on:click="click_banner(i)">{{i+1}}</span>
+                    </div> -->
+        
+                    <ol class="pagination">
+                        <li v-bind:class="index == i ? 'current_page':''" v-for="(item,i) in imgArr"
+                            v-on:click="click_banner(i)"></li>
+                        <!-- <li :style="{ background:licolor1 }" @click="centerclick1"></li> 
+                        <li :style="{ background:licolor2 }" @click="centerclick2"></li>
+                        <li :style="{ background:licolor3 }" @click="centerclick3"></li>
+                        <li :style="{ background:licolor4 }" @click="centerclick4"></li>
+                        <li :style="{ background:licolor5 }" @click="centerclick5"></li> -->
+                    </ol>
+                </div>
+                <div id="right-banner" class="right-banner">
+                    <div id="bookname" class="book-box">
+                        <a href="">
+                            <img src="../image/某某书.jpg" alt="">
+                            <div class="etc">{{ booknameList[10] }}</div>
+                        </a>    
+                        <a href="">
+                            <img src="../image/伪装学渣170*100.jpg" alt="">
+                            <div class="etc">{{ booknameList[11] }}</div>
+                        </a>  
+                        <a href="">
+                            <img src="../image/某某书.jpg" alt="">
+                            <div class="etc">{{ booknameList[12] }}</div>
+                        </a>  
+                        <a href="">
+                            <img src="../image/某某书.jpg" alt="">
+                            <div class="etc">{{ booknameList[13] }}</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="ad">
+                <div class="title-box">
+                    <div class="iconfont icon-ziyuan">
+                        <span>推广</span>
+                        <div></div>
+                        <a href="">精品集锦，不看会后悔哦>>></a>
+                        <a href="" class="list-box">
+                            <span>全集列表</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="ad-content">
+                    <ul>
+                        <a href="">
+                            <img src="../image/信息素170*100.jpg" alt="我喜欢你的信息素图片">
+                            <span>见过你之后，风花雪月都暗淡无光无关</span>
+                        </a>
+                        <a href="">
+                            <img src="../image/天官书.jpeg" alt="伪装学渣图片">
+                            <span>东楼贺朝，西楼谢俞～清华双杰，谋财害命</span>
+                        </a>
+                        <a href="">
+                            <img src="../image/将进酒170*100.jpg" alt="将进酒图片">
+                            <span>古风权谋强强：我要翻过这座山，我要为自己一战</span>
+                        </a>
+                        <a href="">
+                            <img src="../image/我只喜欢你的人设170*100.jpg" alt="我只喜欢你的人设图片">
+                            <span>和偶像初见即翻车，画手大大前排追星</span>
+                        </a>
+                    </ul>
+                    <div class="right-ad">
+                        <a href=""><img src="../image/fog.jpg" alt="fog图片"></a>
+                    </div>
+                </div>
+                <div class="ad-bottom">
+                    <a href=""><img src="../image/广告条.jpg" alt=""></a>
+                </div>
+                
+            </div>
+
+        </div>
+        <!-- 主题页 -->
+        <div class="storage-box md">
+            <div class="live">
+                <div class="theme-box">
+                    <div class="left-box">
+                        <img src="../image/live.png" alt="">
+                        <a href="" class="title-words">正在直播</a>
+                        <span class="number">10000人正在直播</span>
+                        <div class="changebox">
+                            <a href="" class="change-box">
+                                <span>
+                                    <div class="iconfont icon-huanyihuan"></div>
+                                    <span class="change-words">换一换</span>
+                                </span>
+                            </a>
+                            <a href="" class="change-box">
+                                <span class="change-words">更多></span>
+                            </a>
+                        </div>
+                        <div class="blank"></div>
+                    </div>
+                    
+                </div>
+                <ul class="theme-content">
+                        <div class="little-theme-content" href="">
+                            <a href="">
+                                <img src="../image/将进酒170*100.jpg" alt="">
+                                <div class="live-title">【3D环绕】今天你开心了吗还是不开心吗</div>
+                            </a>
+                            <a href="" class="live-owner">是我是我</a>
+                        </div>
+                        <div class="little-theme-content" href="">
+                            <a href="">
+                                <img src="../image/天官书.jpeg" alt="">
+                                <div class="live-title">【3D环绕】今天你开心了吗</div>
+                            </a>
+                            <a href="" class="live-owner">是我是我</a>
+                        </div>
+                        <div class="little-theme-content" href="">
+                            <a href="">
+                                <img src="../image/将进酒170*100.jpg" alt="">
+                                <div class="live-title">【3D环绕】今天你开心了吗</div>
+                            </a>
+                            <a href="" class="live-owner">是我是我</a>
+                        </div>
+                        <div class="little-theme-content" href="">
+                            <a href="">
+                                <img src="../image/将进酒170*100.jpg" alt="">
+                                <div class="live-title">【3D环绕】今天你开心了吗</div>
+                            </a>
+                            <a href="" class="live-owner">是我是我</a>
+                        </div>
+                
+                    <div class="little-theme-content blank" href="">
+                        <a href="">
+                            <img src="../image/将进酒170*100.jpg" alt="">
+                            <div class="live-title">【3D环绕】今天你开心了吗</div>
+                        </a>
+                        <a href="" class="live-owner">是我是我</a>
+                    </div>
+                    <div class="little-theme-content blank" href="">
+                        <a href="">
+                            <img src="../image/将进酒170*100.jpg" alt="">
+                            <div class="live-title">【3D环绕】今天你开心了吗</div>
+                        </a>
+                        <a href="" class="live-owner">是我是我</a>
+                    </div>
+                    <div class="little-theme-content blank" href="">
+                        <a href="">
+                            <img src="../image/将进酒170*100.jpg" alt="">
+                            <div class="live-title">【3D环绕】今天你开心了吗</div>
+                        </a>
+                        <a href="" class="live-owner">是我是我</a>
+                    </div>
+                    <div class="little-theme-content blank" href="">
+                        <a href="">
+                            <img src="../image/将进酒170*100.jpg" alt="">
+                            <div class="live-title">【3D环绕】今天你开心了吗</div>
+                        </a>
+                        <a href="" class="live-owner">是我是我</a>
+                    </div>
+                </ul>
+                <div id="rightbox" class="right-box">
+                    <a v-bind:href="linkArr[index]" target="_blank"><img v-bind:src="imgArr[index]" class="ban_img" alt=""></a>
+                    <!-- <a :style="{display:isactive1}" href=""><img src="../image/270*270.jpg" alt=""></a>
+                    <a :style="{display:isactive2}" href=""><img src="../image/将进酒170*100.jpg" alt=""></a>
+                    <a :style="{display:isactive3}" href=""><img src="../image/我只喜欢你的人设170*100.jpg" alt=""></a> -->
+                    <ol class="pagination pagination-position">
+                        <li :class="index == i ? 'current_page':''" v-for="(item,i) in imgArr"
+                            v-on:click="click_banner(i)" style="background-color:rgb(89, 58, 129);"></li>
+                        <!-- <li :style="{background:licolor1}" @click="centerclick1()"></li>
+                        <li :style="{background:licolor2}" @click="centerclick2()"></li>
+                        <li :style="{background:licolor3}" @click="centerclick3()"></li> -->
+                    </ol>
+                </div>
+                <div class="right-title">
+                    <a href="">直播排行</a>
+                    <a href="">关注的主播</a>
+                    <a href="">为你推荐</a>
+                </div>
+            </div>
+            <div class="novel">
+                <div class="position-box">
+                    <div class="theme-box">
+                        <div class="left-box">
+                            <img src="../image/novel.png" alt="">
+                            <a href="" class="title-words">热门小说</a>
+                            <div class="changebox">
+                                <a href="" class="change-box">
+                                    <span>
+                                        <div class="iconfont icon-huanyihuan"></div>
+                                        <span class="change-words">换一换</span>
+                                    </span>
+                                </a>
+                                <a href="" class="change-box">
+                                    <span class="change-words">更多></span>
+                                </a>
+                            </div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <ul class="theme-content">
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/我行书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某看我看我看完</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里试试看可不可以好长啊</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/某某书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/伪装学渣170*100.jpg" alt="">
+                                <div class="book-name etc length-adj">某某看我看我看完</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里试试看可不可以好长啊</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/某某书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/我行书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某看我看我看完</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里试试看可不可以好长啊</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/某某书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/我行书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某看我看我看完</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里试试看可不可以好长啊</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/某某书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/我行书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某看我看我看完</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里试试看可不可以好长啊</a>
+                        </div>
+                        <div class="book-box1" href="">
+                            <a href="">
+                                <img class="book-size shad" src="../image/某某书.jpg" alt="">
+                                <div class="book-name etc length-adj">某某</div>
+                            </a>
+                            <a href="" class="author etc length-adj">木苏里</a>
+                        </div>
+                                            
+                    </ul>
+                    <div class="right-part">
+                        <span class="top-list">排行榜</span>
+                        <a href="" class="more">更多></a>
+                    </div>
+                    <div id="book" class="rank-list">
+                        <ul>
+                            <li>
+                                <span class="rank-num">1</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[0]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">2</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[1]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">3</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[2]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">4</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[3]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">5</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[4]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">6</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[5]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">7</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[6]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">8</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[7]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">9</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[8]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>  
+                            <li>
+                                <span class="rank-num">10</span>
+                                <a href="">
+                                    <span class="rank-name etc1">{{booknameList[9]}}</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>  
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="ad-bottom">
+                <a href=""><img src="../image/广告条.jpg" alt=""></a>
+            </div>
+            <div class="comic">
+                <div class="position-box">
+                    <div class="theme-box">
+                        <div class="left-box">
+                            <img src="../image/comic.png" alt="">
+                            <a href="" class="title-words">漫画抢先</a>
+                            
+                            <div class="changebox">
+                                <a href="" class="change-box">
+                                    <span>
+                                        <div class="iconfont icon-huanyihuan"></div>
+                                        <span class="change-words">换一换</span>
+                                    </span>
+                                </a>
+                                <a href="" class="change-box">
+                                    <span class="change-words">更多></span>
+                                </a>
+                            </div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <ul class="theme-content">
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1" src="../image/300*400.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某测试这个标题，看看可不可以</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里测试这个标题，看看可不可以</a>
+                        </div>
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1 " src="../image/300*400.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里</a>
+                        </div>
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1 " src="../image/将进酒170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里</a>
+                        </div>
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1 " src="../image/300*400.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里</a>
+                        </div>
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1" src="../image/300*400.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某测试这个标题，看看可不可以</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里测试这个标题，看看可不可以</a>
+                        </div>
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1 " src="../image/300*400.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里</a>
+                        </div>
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1" src="../image/300*400.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某测试这个标题，看看可不可以</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里测试这个标题，看看可不可以</a>
+                        </div>
+                        <div class="book-box2" href="">
+                            <a href="">
+                                <img class="book-size1 " src="../image/将进酒170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj1">某某</div>
+                            </a>
+                            <a href="" class="author1 etc">木苏里</a>
+                        </div>
+                    </ul>
+                    <div class="right-part">
+                        <span class="top-list">排行榜</span>
+                        <a href="" class="more">更多></a>
+                    </div>
+                    <div class="rank-list">
+                        <ul>
+                            <li>
+                                <span class="rank-num">1</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">2</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">3</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">4</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">5</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">6</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">7</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">8</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">9</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>  
+                            <li>
+                                <span class="rank-num">10</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">11</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>  
+                            <li>
+                                <span class="rank-num">12</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>    
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-position">
+                <img src="../image/blank.jpg" alt="">
+            </div>
+            <div class="video">
+                <div class="position-box">
+                    <div class="theme-box">
+                        <div class="left-box">
+                            <img src="../image/video.png" alt="">
+                            <a href="" class="title-words">绝美pv</a>
+                            <div class="changebox">
+                                <a href="" class="change-box">
+                                    <span>
+                                        <div class="iconfont icon-huanyihuan"></div>
+                                        <span class="change-words">换一换</span>
+                                    </span>
+                                </a>
+                                <a href="" class="change-box">
+                                    <span class="change-words">更多></span>
+                                </a>
+                            </div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <ul class="theme-content">
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2" src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2" src="../image/天官书.jpeg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2" src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2" src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size2 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        
+                    </ul>
+                    <div class="right-part">
+                        <span class="top-list">排行榜</span>
+                        <a href="" class="more">更多></a>
+                    </div>
+                    <div class="rank-list">
+                        <ul>
+                            <li>
+                                <span class="rank-num">1</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">2</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">3</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">4</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">5</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">6</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">7</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-position">
+                <img src="../image/blank.jpg" alt="">
+            </div>
+            <div class="radio">
+                <div class="position-box">
+                    <div class="theme-box">
+                        <div class="left-box">
+                            <img src="../image/audio.png" alt="">
+                            <a href="" class="title-words">视听盛宴</a>
+                            <div class="changebox">
+                                <a href="" class="change-box">
+                                    <span>
+                                        <div class="iconfont icon-huanyihuan"></div>
+                                        <span class="change-words">换一换</span>
+                                    </span>
+                                </a>
+                                <a href="" class="change-box">
+                                    <span class="change-words">更多></span>
+                                </a>
+                            </div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <ul class="theme-content">
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3" src="../image/天官书.jpeg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3" src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3" src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box3" href="">
+                            <a href="">
+                                <img class="book-size3 " src="../image/信息素170*100.jpg" alt="">
+                                <div class="book-name1 etc length-adj2">某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj2">木苏里</a>
+                        </div>
+                        
+                    </ul>
+                    <div class="right-part">
+                        <span class="top-list">排行榜</span>
+                        <a href="" class="more">更多></a>
+                    </div>
+                    <div class="rank-list">
+                        <ul>
+                            <li>
+                                <span class="rank-num">1</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">2</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">3</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">4</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">5</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">6</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">7</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">8</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">9</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">10</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">11</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-position">
+                <img src="../image/blank.jpg" alt="">
+            </div>
+            <div class="music">
+                <div class="position-box">
+                    <div class="theme-box">
+                        <div class="left-box">
+                            <img src="../image/music.png" alt="">
+                            <a href="" class="title-words">音乐专区</a>
+                            <div class="changebox">
+                                <a href="" class="change-box">
+                                    <span>
+                                        <div class="iconfont icon-huanyihuan"></div>
+                                        <span class="change-words">换一换</span>
+                                    </span>
+                                </a>
+                                <a href="" class="change-box">
+                                    <span class="change-words">更多></span>
+                                </a>
+                            </div>
+                            <div class="blank"></div>
+                        </div>
+                    </div>
+                    <ul class="theme-content">
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">给某某</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">Marin</a>
+                        </div>
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                        <div class="book-box4" href="">
+                            <a href="">
+                                <img class="book-size4" src="../image/270*270.jpg" alt="">
+                                <div class="book-name1 etc length-adj4">我喜欢你的信息素，测试一下这个长标题</div>
+                            </a>
+                            <a href="" class="author1 etc length-adj4">木苏里，测试一下，行不行，12324234</a>
+                        </div>
+                    </ul>
+                    <div class="right-part">
+                        <span class="top-list">排行榜</span>
+                        <a href="" class="more">更多></a>
+                    </div>
+                    <div id=“musicRank” class="rank-list">
+                        <ul>
+                            <li v-for >
+                                <span class="rank-num">1</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">2</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">3</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">4</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">5</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">6</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">7</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">8</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣,测试一下，试试看看看可不可以</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄，测试一下，试试看可不可以</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">9</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                            <li>
+                                <span class="rank-num">10</span>
+                                <a href="">
+                                    <span class="rank-name etc1">伪装学渣不长</span>
+                                    <span class="rank-author etc1 length-adj3">木瓜黄不长</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+</body>
+<script type="text/javascript" src="../js/vue.js"></script>
+<script type="text/javascript" src="../js/axios.min.js"></script>
+<script type="text/javascript" src="../js/index1.js"></script>
